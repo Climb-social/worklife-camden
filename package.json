@@ -7,9 +7,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack-dev-server --content-base src/",
-        "prebuild": "rm -rf build && surge teardown",
+        "prebuild": "rm -rf build && surge teardown worklife-camden-display.surge.sh",
         "build": "webpack -p",
-        "deploy": "npm run build && surge"
+        "deploy": "npm run build && surge -p ./build -d worklife-camden-display.surge.sh"
     },
     "repository": {
         "type": "git",
