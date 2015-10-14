@@ -5,6 +5,6 @@ import WallContainer from './components/WallContainer';
 import './style/main.scss';
 
 ReactDOM.render(
-    <WallContainer collectionId="561ba63445284e1740e016f7" limit="2"/>,
+    <WallContainer collectionId="561e601745284e15a8d5343d" limit="10"/>,
     document.getElementById('root')
 );
