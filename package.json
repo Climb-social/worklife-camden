@@ -1,52 +1,53 @@
 {
-    "name": "worklife-camden-display",
-    "private": "true",
-    "version": "1.0.0",
-    "description": "Climb.social display for Worklife – Camden",
-    "main": "src/index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "webpack-dev-server --content-base src/",
-        "prebuild": "rm -rf build && surge teardown worklife-camden-display.surge.sh",
-        "build": "webpack -p",
-        "deploy": "npm run build && surge -p ./build -d worklife-camden-display.surge.sh"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Climb-social/worklife-camden-display.git"
-    },
-    "keywords": [
-        "Climb.social",
-        "React"
-    ],
-    "author": "Michele Memoli <michele@100shapes.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/Climb-social/worklife-camden-display/issues"
-    },
-    "homepage": "https://github.com/Climb-social/worklife-camden-display#readme",
-    "devDependencies": {
-        "autoprefixer-loader": "^3.1.0",
-        "babel-core": "^5.8.25",
-        "babel-eslint": "^4.1.3",
-        "babel-loader": "^5.3.2",
-        "css-loader": "^0.19.0",
-        "eslint": "^1.6.0",
-        "eslint-loader": "^1.1.0",
-        "eslint-plugin-react": "^3.5.1",
-        "file-loader": "^0.8.4",
-        "html-webpack-plugin": "^1.6.2",
-        "json-loader": "^0.5.3",
-        "node-sass": "^3.3.3",
-        "sass-loader": "^3.0.0",
-        "style-loader": "^0.12.4",
-        "webpack": "^1.12.2",
-        "webpack-dev-server": "^1.12.0"
-    },
-    "dependencies": {
-        "climb-social": "^1.1.0",
-        "react": "^0.14.0",
-        "react-dom": "^0.14.0",
-        "react-motion": "^0.3.1"
-    }
+  "name": "worklife-camden-display",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "Climb.social display for Worklife – Camden",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --content-base src/",
+    "prebuild": "rm -rf build && surge teardown worklife-camden-display.surge.sh",
+    "build": "webpack -p",
+    "deploy": "npm run build && surge -p ./build -d worklife-camden-display.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Climb-social/worklife-camden-display.git"
+  },
+  "keywords": [
+    "Climb.social",
+    "React"
+  ],
+  "author": "Michele Memoli <michele@100shapes.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Climb-social/worklife-camden-display/issues"
+  },
+  "homepage": "https://github.com/Climb-social/worklife-camden-display#readme",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "babel-core": "^5.8.25",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.19.0",
+    "eslint": "^1.6.0",
+    "eslint-loader": "^1.1.0",
+    "eslint-plugin-react": "^3.5.1",
+    "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^1.6.2",
+    "json-loader": "^0.5.3",
+    "node-sass": "^3.3.3",
+    "react-climb-social": "^1.0.1",
+    "sass-loader": "^3.0.0",
+    "style-loader": "^0.12.4",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "dependencies": {
+    "climb-social": "^1.1.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-motion": "^0.3.1"
+  }
 }
