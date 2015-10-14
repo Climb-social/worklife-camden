@@ -40,9 +40,6 @@ module.exports = {
             }
         ]
     },
-    externals: {
-        'react': 'React'
-    },
     plugins: [
         new HtmlWebpackPlugin({
             inject: true,
