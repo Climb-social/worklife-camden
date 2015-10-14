@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import Tile from './Tile';
-import {TransitionMotion, spring, presets} from 'react-motion';
+import {TransitionMotion, spring} from 'react-motion';
 
 
 class Wall extends Component {
