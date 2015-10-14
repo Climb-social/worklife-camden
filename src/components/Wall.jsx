@@ -44,9 +44,7 @@ class Wall extends Component {
 
         const style = {
             opacity: styleConfig.opacity,
-            transform: `scale(${styleConfig.scale})`,
-            '-webkit-backface-visibility': 'hidden',
-            '-webkit-perspective': '1000'
+            transform: `scale(${styleConfig.scale})`
         };
 
         return (

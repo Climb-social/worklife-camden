@@ -8,7 +8,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack-dev-server --content-base src/",
         "prebuild": "rm -rf build",
-        "build": "webpack -p"
+        "build": "webpack -p",
+        "deploy": "npm run build && surge"
     },
     "repository": {
         "type": "git",
