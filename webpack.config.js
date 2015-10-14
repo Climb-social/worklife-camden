@@ -37,6 +37,10 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel',
                 query: {stage: 0}
+            }, {
+                test: /\.scss$/,
+                exclude: /node_modules/,
+                loader: 'style!css!autoprefixer-loader?browsers=last 2 version!sass'
             }
         ]
     },
