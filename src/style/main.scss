@@ -54,10 +54,15 @@ $color-orange: #FFB600;
     z-index: 1;
     margin-bottom: 24px;
     color: black;
-    font-size: 22px;
 
     > a {
         color: white;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 260px;
+        display: inline-block;
+        vertical-align: bottom;
     }
 
     .climb__tile--has-no-image & {
