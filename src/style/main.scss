@@ -1,4 +1,5 @@
 $color-orange: #FFB600;
+$color-aubergine: #322F3F;
 
 .climb__wall {
     display: flex;
@@ -11,12 +12,12 @@ $color-orange: #FFB600;
 .climb__tile {
     display: flex;
     flex-shrink: 0;
-    width: 375px;
     height: 425px;
     box-sizing: border-box;
     justify-content: flex-end;
     flex-direction: column;
-    margin: 13px;
+    outline: 1px solid transparent;
+    margin-bottom: 20px;
 
     overflow: hidden;
     background-color: $color-orange;
@@ -53,7 +54,7 @@ $color-orange: #FFB600;
 .climb__tile__message {
     z-index: 1;
     margin-bottom: 24px;
-    color: black;
+    color: $color-aubergine;
 
     > a {
         color: white;
@@ -66,7 +67,7 @@ $color-orange: #FFB600;
     }
 
     .climb__tile--has-no-image & {
-        font-size: 180%;
+        font-size: 185%;
     }
 }
 
@@ -74,7 +75,7 @@ $color-orange: #FFB600;
     display: block;
     margin: -10px;
 
-    color: black;
+    color: $color-aubergine;
 
     img {
         border-radius: 25px;

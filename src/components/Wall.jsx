@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import Tile from './Tile';
-import {TransitionMotion, spring} from 'react-motion';
+import {TransitionMotion, spring, presets} from 'react-motion';
 
 
 class Wall extends Component {
@@ -15,6 +15,8 @@ class Wall extends Component {
             configs[key] = {
                 opacity: spring(1),
                 scale: spring(1),
+                width: spring(375),
+                margin: spring(10),
                 item: this.props.items[key]
             };
         });
@@ -25,6 +27,8 @@ class Wall extends Component {
         return {
             opacity: spring(0),
             scale: spring(0),
+            width: spring(0),
+            margin: spring(0),
             item: this.props.items[key]
         };
     }
@@ -33,6 +37,8 @@ class Wall extends Component {
         return {
             opacity: spring(0),
             scale: spring(0),
+            width: spring(0),
+            margin: spring(0),
             item: style.item
         };
     }
@@ -44,7 +50,10 @@ class Wall extends Component {
 
         const style = {
             opacity: styleConfig.opacity,
-            transform: `scale(${styleConfig.scale})`
+            width: `${styleConfig.width}px`,
+            'margin-left': styleConfig.margin,
+            'margin-right': styleConfig.margin
+            //transform: `scale(${styleConfig.scale})`
         };
 
         return (
