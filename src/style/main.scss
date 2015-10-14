@@ -1,12 +1,17 @@
-$color-orange: #FFB600;
-$color-aubergine: #322F3F;
+$color-grey-light: #f6f6f6;
+$color-grey-dark: #bcbcbc;
+
 
 .climb__wall {
     display: flex;
     width: 100%;
+    padding: 0;
+    margin: 0;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    font-size: 100%;
+    font-family: sans-serif;
 }
 
 .climb__tile {
@@ -20,9 +25,9 @@ $color-aubergine: #322F3F;
     margin-bottom: 20px;
 
     overflow: hidden;
-    background-color: $color-orange;
     text-align: left;
     border-radius: 7px;
+    background-color: $color-grey-light;
 
     backface-visibility: hidden;
     perspective: 1000px;
@@ -30,9 +35,10 @@ $color-aubergine: #322F3F;
 }
 
 .climb__tile__content {
-    background-color: $color-orange;
     z-index: 1;
     padding: 26px;
+
+    background-color: $color-grey-light;
 
     .climb__tile--has-no-image & {
         height: 100%;
@@ -54,10 +60,8 @@ $color-aubergine: #322F3F;
 .climb__tile__message {
     z-index: 1;
     margin-bottom: 24px;
-    color: $color-aubergine;
 
     > a {
-        color: white;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -75,8 +79,6 @@ $color-aubergine: #322F3F;
     display: block;
     margin: -10px;
 
-    color: $color-aubergine;
-
     img {
         border-radius: 25px;
         width: 34px;
@@ -90,12 +92,6 @@ $color-aubergine: #322F3F;
     }
 }
 
-header {
-    padding: 20px;
-    margin-bottom: 20px;
-    height: 58px;
-    background: $color-orange url('../img/worklife_logo--small.png') center 20px no-repeat;
-}
 
 .climb-badge {
     position: fixed;
@@ -106,4 +102,11 @@ header {
     width: 200px;
     height: 80px;
     border-radius: 5px;
+
+    > span {
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+    }
 }
+
