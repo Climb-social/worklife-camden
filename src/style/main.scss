@@ -100,10 +100,4 @@ header {
     width: 200px;
     height: 80px;
     border-radius: 5px;
-
-    > span {
-        position: absolute !important;
-        top: -9999px !important;
-        left: -9999px !important;
-    }
 }
