@@ -38,6 +38,10 @@ module.exports = {
                 loader: 'babel',
                 query: {stage: 0}
             }, {
+                test: /\.png$/,
+                exclude: /node_modules/,
+                loader: 'file'
+            }, {
                 test: /\.scss$/,
                 exclude: /node_modules/,
                 loader: 'style!css!autoprefixer-loader?browsers=last 2 version!sass'
