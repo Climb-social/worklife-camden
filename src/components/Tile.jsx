@@ -39,10 +39,14 @@ class Tile extends React.Component {
 
         if (this.props.image) {
             classString += ' climb__tile--has-media climb__tile--has-image';
+        } else {
+            classString += ' climb__tile--has-no-image';
         }
 
         if (this.props.video_url) {
             classString += ' climb__tile--has-media climb__tile--has-video';
+        } else {
+            classString += ' climb__tile--has-no-video';
         }
 
         return classString;
@@ -65,10 +69,9 @@ class Tile extends React.Component {
 
                 <div className="climb__tile__content">
                     { message }
+
+                    <Author {...author} />
                 </div>
-
-                <Author {...author} />
-
             </div>
         );
     }

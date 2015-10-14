@@ -28,10 +28,6 @@ class WallContainer extends Component {
 
     init() {
 
-        if (!this.props.collectionId) {
-            return;
-        }
-
         climb
             .getStream(this.props.collectionId, this.props.limit)
             .subscribe(items => {
